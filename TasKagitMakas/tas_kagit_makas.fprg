@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="kaan.arslan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-22 12:28:39 &#214;S"/>
+        <attribute name="created" value="a2Fhbi5hcnNsYW47QU5LMS1ZWkxNT1JULTA4OzIwMjItMTAtMjI7MTE6NDY6MTcgw5bDljszNjgy"/>
+        <attribute name="edited" value="a2Fhbi5hcnNsYW47QU5LMS1ZWkxNT1JULTA4OzIwMjItMTAtMjI7MTI6Mjg6Mzkgw5ZTOzE7MzY2NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="oyuncu1" type="String" array="False" size=""/>
+            <declare name="oyuncu2" type="String" array="False" size=""/>
+            <output expression="&quot;Oyuncu 1'in se&#231;imi nedir?&quot;" newline="True"/>
+            <input variable="oyuncu1"/>
+            <output expression="&quot;Oyuncu2'nin se&#231;imi nedir?&quot;" newline="True"/>
+            <input variable="oyuncu2"/>
+            <if expression="oyuncu1 = &quot;ta&#351;&quot;">
+                <then>
+                    <if expression="oyuncu2 = &quot;makas&quot;">
+                        <then>
+                            <output expression="&quot;Oyuncu1 kazand&#305;&quot;" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <if expression="oyuncu2 = &quot;ta&#351;&quot;">
+                        <then>
+                            <output expression="&quot;Berabere&quot;" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <if expression="oyuncu2 = &quot;ka&#287;&#305;t&quot;">
+                        <then>
+                            <output expression="&quot;Oyuncu2 kazand&#305;&quot;" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                </then>
+                <else/>
+            </if>
+            <if expression="oyuncu1 = &quot;makas&quot;">
+                <then>
+                    <if expression="oyuncu2 = &quot;makas&quot;">
+                        <then>
+                            <output expression="&quot;Berabere&quot;" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <if expression="oyuncu2 = &quot;ta&#351;&quot;">
+                        <then>
+                            <output expression="&quot;Oyuncu2 kazand&#305;&quot;" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <if expression="oyuncu2 = &quot;ka&#287;&#305;t&quot;">
+                        <then>
+                            <output expression="&quot;Oyuncu1 kazand&#305;&quot;" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                </then>
+                <else/>
+            </if>
+            <if expression="oyuncu1 = &quot;ka&#287;&#305;t&quot;">
+                <then>
+                    <if expression="oyuncu2 = &quot;makas&quot;">
+                        <then>
+                            <output expression="&quot;Oyuncu2 kazand&#305;&quot;" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <if expression="oyuncu2 = &quot;ta&#351;&quot;">
+                        <then>
+                            <output expression="&quot;Oyuncu1 kazand&#305;&quot;" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <if expression="oyuncu2 = &quot;ka&#287;&#305;t&quot;">
+                        <then>
+                            <output expression="&quot;Berabere&quot;" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
